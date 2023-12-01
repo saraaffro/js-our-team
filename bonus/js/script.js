@@ -8,9 +8,9 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sotto forma di stringhe
 */
 
-// let nomeCognomeMemberIesimo;
-// let ruoloMemberIesimo;
-// let fotoMemberIesimo;
+let nomeCognomeMemberIesimo;
+let ruoloMemberIesimo;
+let fotoMemberIesimo;
 
 // creare array di oggetti per rappresentare i membri del team (nome, ruolo, foto)
 const memberArray = [
@@ -51,21 +51,31 @@ const memberArray = [
 for(i = 0; i < memberArray.length; i++){
     let memberIesimo = memberArray[i];
     
-    let nomeCognomeMemberIesimo = memberIesimo.nome;
+    nomeCognomeMemberIesimo = memberIesimo.nome;
     // console.log("nome e cognome: ", nomeCognomeMemberIesimo);
 
-    let ruoloMemberIesimo = memberIesimo.ruolo;
+    ruoloMemberIesimo = memberIesimo.ruolo;
     // console.log("ruolo: ", ruoloMemberIesimo);
 
-    let fotoMemberIesimo = memberIesimo.foto;
+    fotoMemberIesimo = memberIesimo.foto;
     // console.log("foto: ", fotoMemberIesimo);
-
-    // Stampare le stesse informazioni su DOM sotto forma di stringhe
-    const infoMember = document.getElementById("text");
-
-    // console.log(key, memberArray[key]);
-    infoMember.innerHTML += `Member: ${nomeCognomeMemberIesimo}, Ruolo: ${ruoloMemberIesimo}, Foto: ${fotoMemberIesimo}. `;
 }
+
+// seleziono div
+const nomeMember1 = document.querySelector(".name-member1").innerHTML = memberArray[0].nome;
+const nomeMember2 = document.querySelector(".name-member2").innerHTML = memberArray[1].nome;
+const nomeMember3 = document.querySelector(".name-member3").innerHTML = memberArray[2].nome;
+const nomeMember4 = document.querySelector(".name-member4").innerHTML = memberArray[3].nome;
+const nomeMember5 = document.querySelector(".name-member5").innerHTML = memberArray[4].nome;
+const nomeMember6 = document.querySelector(".name-member6").innerHTML = memberArray[5].nome;
+
+const ruoloMember1 = document.querySelector(".role-member1").innerHTML = memberArray[0].ruolo;
+const ruoloMember2 = document.querySelector(".role-member2").innerHTML = memberArray[0].ruolo;
+const ruoloMember3 = document.querySelector(".role-member3").innerHTML = memberArray[0].ruolo;
+const ruoloMember4 = document.querySelector(".role-member4").innerHTML = memberArray[0].ruolo;
+const ruoloMember5 = document.querySelector(".role-member5").innerHTML = memberArray[0].ruolo;
+const ruoloMember6 = document.querySelector(".role-member6").innerHTML = memberArray[0].ruolo;
+
 
 
 

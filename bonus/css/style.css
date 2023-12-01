@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f1;
+}
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+p{
+    padding: 20px 70px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: calc(100% / 3);
+}
+
+.card{
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.img-container{
+    width: 100%;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.role{
+    font-size: 10px;
+    padding: 10px 0;
+}
