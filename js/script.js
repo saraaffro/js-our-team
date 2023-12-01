@@ -8,6 +8,10 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sotto forma di stringhe
 */
 
+let nomeCognomeMemberIesimo;
+let ruoloMemberIesimo;
+let fotoMemberIesimo;
+
 // creare array di oggetti per rappresentare i membri del team (nome, ruolo, foto)
 const memberArray = [
     {
@@ -47,15 +51,20 @@ const memberArray = [
 for(i = 0; i < memberArray.length; i++){
     let memberIesimo = memberArray[i];
     
-    let nomeCognomeMemberIesimo = memberIesimo.nome;
-    console.log("nome e cognome: ", nomeCognomeMemberIesimo);
+    nomeCognomeMemberIesimo = memberIesimo.nome;
+    // console.log("nome e cognome: ", nomeCognomeMemberIesimo);
 
-    let ruoloMemberIesimo = memberIesimo.ruolo;
-    console.log("ruolo: ", ruoloMemberIesimo);
+    ruoloMemberIesimo = memberIesimo.ruolo;
+    // console.log("ruolo: ", ruoloMemberIesimo);
 
-    let fotoMemberIesimo = memberIesimo.foto;
-    console.log("foto: ", fotoMemberIesimo);
+    fotoMemberIesimo = memberIesimo.foto;
+    // console.log("foto: ", fotoMemberIesimo);
+
+    // Stampare le stesse informazioni su DOM sotto forma di stringhe
+    const infoMember = document.getElementById("text");
+    // console.log(key, memberArray[key]);
+    infoMember.innerHTML += `Member: ${nomeCognomeMemberIesimo}, Ruolo: ${ruoloMemberIesimo}, Foto: ${fotoMemberIesimo}. `;
 }
 
 
-// Stampare le stesse informazioni su DOM sotto forma di stringhe
+
