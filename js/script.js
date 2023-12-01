@@ -44,6 +44,18 @@ const memberArray = [
 ]
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+for(i = 0; i < memberArray.length; i++){
+    let memberIesimo = memberArray[i];
+    
+    let nomeCognomeMemberIesimo = memberIesimo.nome;
+    console.log("nome e cognome: ", nomeCognomeMemberIesimo);
+
+    let ruoloMemberIesimo = memberIesimo.ruolo;
+    console.log("ruolo: ", ruoloMemberIesimo);
+
+    let fotoMemberIesimo = memberIesimo.foto;
+    console.log("foto: ", fotoMemberIesimo);
+}
 
 
 // Stampare le stesse informazioni su DOM sotto forma di stringhe
