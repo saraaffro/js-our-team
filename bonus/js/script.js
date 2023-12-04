@@ -8,10 +8,7 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sotto forma di stringhe
 */
 
-let nomeCognomeMemberIesimo;
-let ruoloMemberIesimo;
-let fotoMemberIesimo;
-
+// seleziono div
 const row = document.querySelector(".row");
 
 // creare array di oggetti per rappresentare i membri del team (nome, ruolo, foto)
@@ -19,32 +16,32 @@ const memberArray = [
     {
         "nome" : "Wayne Barnett",
         "ruolo" : "Founder & CEO",
-        "foto" : "wayne-barnett-founder-ceo-jpg"
+        "foto" : "wayne-barnett-founder-ceo.jpg"
     },
     {
         "nome" : "Angela Caroll",
         "ruolo" : "Chief Editor",
-        "foto" : "angela-caroll-chief-editor-jpg"
+        "foto" : "angela-caroll-chief-editor.jpg"
     },
     {
         "nome" : "Walter Gordon",
         "ruolo" : "Office Manager",
-        "foto" : "walter-gordon-office-manager-jpg"
+        "foto" : "walter-gordon-office-manager.jpg"
     },
     {
         "nome" : "Angela Lopez",
         "ruolo" : "Social Media Manager",
-        "foto" : "angela-lopez-social-media-manager-jpg"
+        "foto" : "angela-lopez-social-media-manager.jpg"
     },
     {
         "nome" : "Scott Estrada",
         "ruolo" : "Developer",
-        "foto" : "scott-estrada-developer-jpg"
+        "foto" : "scott-estrada-developer.jpg"
     },
     {
         "nome" : "Barbara Ramos",
         "ruolo" : "Graphic Designer",
-        "foto" : "barbara-ramos-graphic-designer-jpg"
+        "foto" : "barbara-ramos-graphic-designer.jpg"
     },
 
 ]
@@ -53,13 +50,13 @@ const memberArray = [
 for(i = 0; i < memberArray.length; i++){
     let memberIesimo = memberArray[i];
     
-    nomeCognomeMemberIesimo = memberIesimo.nome;
+    let nomeCognomeMemberIesimo = memberIesimo.nome;
     // console.log("nome e cognome: ", nomeCognomeMemberIesimo);
 
-    ruoloMemberIesimo = memberIesimo.ruolo;
+    let ruoloMemberIesimo = memberIesimo.ruolo;
     // console.log("ruolo: ", ruoloMemberIesimo);
 
-    fotoMemberIesimo = memberIesimo.foto;
+    let fotoMemberIesimo = memberIesimo.foto;
     // console.log("foto: ", fotoMemberIesimo);
 
     const col = 
